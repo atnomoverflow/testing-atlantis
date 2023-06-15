@@ -1,0 +1,8 @@
+workflows:
+  - name: plan
+    steps:
+      - init
+        command: ["cmd.exe", "/c", "terraform init -input=false -upgrade"]
+      - plan
+        command: ["cmd.exe", "/c", "terraform plan"]
+
