@@ -5,4 +5,3 @@ workflows:
         command: ["cmd.exe", "/c", "terraform init -input=false -upgrade"]
       - plan
         command: ["cmd.exe", "/c", "terraform plan"]
-
