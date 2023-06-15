@@ -1,10 +1,12 @@
-workflows:
-  custom:
-    init:
-      steps:
-      -run: terraform init -input=false -upgrade
-    plan:
-      steps:
-      - init
-      -run: terraform plan -input=false
+projects:
+- dir: .
+  workflows:
+    custom:
+      init:
+        steps:
+        -run: terraform init -input=false -upgrade
+      plan:
+        steps:
+        - init
+        -run: terraform plan -input=false
     
