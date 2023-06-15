@@ -1,6 +1,6 @@
 projects:
 - dir: .
-  workflows:
+  workflow:
     custom:
       init:
         steps:
