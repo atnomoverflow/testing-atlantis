@@ -1,6 +1,0 @@
-# workflows:
-#   - name: plan
-#     steps:
-#       - run: terraform init -input=false
-#       - plan
-#         command: ["cmd.exe", "/c", "terraform plan"]
