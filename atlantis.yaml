@@ -1,7 +1,8 @@
 workflows:
   custom:
     init:
-      steps: terraform init --input=false upgrade
+      steps: 
+      -run: terraform init --input=false upgrade
     plan:
       steps:
       - init
