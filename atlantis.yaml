@@ -1,7 +1,6 @@
 projects:
 - dir: .
-  workflow:
-    custom:
+  workflow: testing
       init:
         steps:
         -run: terraform init -input=false -upgrade
