@@ -1,0 +1,6 @@
+workflows:
+  - name: apply
+    apply_requirements: [approved, mergeable, unblocked]
+    pre_apply:
+      - name: retrieve_tfvars
+        command: ["sh", "-c", "vault read -format=json secret/terraform/project1/variables.tfvars | jq -r '.data' > $DIR/variables.tfvars"]
