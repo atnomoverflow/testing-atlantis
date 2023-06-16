@@ -1,8 +1,3 @@
-repos:
-    - id: /.*/
-      pre_workflow_hooks:
-        - run: vault read -format=json secret/terraform/project1/variables.tfvars | jq -r '.data' > $DIR/variables.tfvars
-          description: Generating tfvars
 version: 2
 projects:
 - dir: .
